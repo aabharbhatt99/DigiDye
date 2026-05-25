@@ -1,0 +1,14 @@
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+
+# Local environment secrets
+backend/.env
+
+# Virtual environments
+.venv/
+venv/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
