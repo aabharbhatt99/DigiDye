@@ -1,2 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "digidye-backend"
+version = "0.1.0"
+description = "DigiDye backend API"
+requires-python = ">=3.12"
+dependencies = [
+  "flask>=3.1.0",
+  "flask-cors>=5.0.0",
+  "pydantic>=2.9.0",
+  "pydantic-settings>=2.6.0",
+  "python-dotenv>=1.0.1",
+  "gunicorn>=23.0.0",
+  "PyJWT>=2.9.0",
+]
+
 [tool.vercel]
 entrypoint = "run:app"
