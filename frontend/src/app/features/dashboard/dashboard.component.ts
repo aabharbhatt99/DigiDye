@@ -84,7 +84,7 @@ import { ApiService } from '../../core/api.service';
             <div class="card-actions">
               <button type="button" [routerLink]="['/profiles', profile.id, 'recipes']" class="btn-link">Recipes</button>
               <button type="button" [routerLink]="['/profiles', profile.id, 'directory']" class="btn-link">Directory</button>
-              <button type="button" [routerLink]="['/profiles', profile.id]" class="btn-link">Settings</button>
+              <button type="button" [routerLink]="['/profiles', profile.id, 'settings']" class="btn-link">Settings</button>
             </div>
           </div>
         </div>

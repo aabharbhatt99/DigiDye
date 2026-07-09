@@ -10,12 +10,6 @@ import { ApiService } from '../../core/api.service';
   imports: [CommonModule, FormsModule, RouterLink],
   template: `
     <div class="profile-settings" *ngIf="profile">
-      <div class="page-header">
-        <div>
-          <button type="button" routerLink="/dashboard" class="back-link">← Back to Dashboard</button>
-          <h1>{{ profile.name }}</h1>
-        </div>
-      </div>
 
       <!-- Profile Info -->
       <div class="section-card">
@@ -104,7 +98,7 @@ import { ApiService } from '../../core/api.service';
             <span class="action-icon">🎨</span>
             <span>Color Directory</span>
           </button>
-          <button type="button" [routerLink]="['/profiles', profileId, 'import']" class="action-card">
+          <button type="button" [routerLink]="['/profiles', profileId, 'recipes', 'import']" class="action-card">
             <span class="action-icon">📥</span>
             <span>Bulk Import</span>
           </button>

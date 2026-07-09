@@ -12,11 +12,10 @@ import { ApiService } from '../../core/api.service';
     <div class="recipe-list">
       <div class="page-header">
         <div>
-          <a routerLink="/dashboard" class="back-link">← Dashboard</a>
           <h1>Recipes</h1>
         </div>
         <div class="header-actions">
-          <a [routerLink]="['/profiles', profileId, 'import']" class="btn-secondary">📥 Import CSV</a>
+          <a [routerLink]="['/profiles', profileId, 'recipes', 'import']" class="btn-secondary">📥 Import CSV</a>
           <button class="btn-primary" (click)="showCreate = true">+ New Recipe</button>
         </div>
       </div>

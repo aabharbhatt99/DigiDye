@@ -12,7 +12,6 @@ import { ApiService } from '../../core/api.service';
     <div class="directory">
       <div class="page-header">
         <div>
-          <a routerLink="/dashboard" class="back-link">← Dashboard</a>
           <h1>Color Directory</h1>
         </div>
         <button class="btn-primary" (click)="showAdd = true">+ Add Color</button>
