@@ -11,7 +11,7 @@ import { AuthService } from './core/auth.service';
     <div class="app-container">
       <nav class="navbar" *ngIf="auth.isLoggedIn()">
         <div class="nav-brand">
-          <span class="logo">🎨</span>
+          <img src="assets/logo.png" class="logo-img" alt="DyeMix Logo">
           <span class="brand-name">DyeMix</span>
         </div>
         <div class="nav-links">
@@ -34,8 +34,8 @@ import { AuthService } from './core/auth.service';
       background: #fff; border-bottom: 1px solid #e2e8f0;
       box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
-    .nav-brand { display: flex; align-items: center; gap: 8px; margin-right: 32px; }
-    .logo { font-size: 24px; }
+    .nav-brand { display: flex; align-items: center; gap: 12px; margin-right: 32px; }
+    .logo-img { height: 38px; width: auto; object-fit: contain; display: block; }
     .brand-name { font-size: 20px; font-weight: 700; color: #1a202c; }
     .nav-links { flex: 1; display: flex; gap: 16px; }
     .nav-links a {

@@ -12,9 +12,10 @@ import { AuthService } from '../../core/auth.service';
     <div class="auth-page">
       <div class="auth-card">
         <div class="auth-header">
-          <span class="auth-logo">🎨</span>
+          <img src="assets/logo.png" class="logo-img" alt="DyeMix Logo">
           <h1>DyeMix</h1>
-          <p>Sign in to your account</p>
+          <p class="tagline">Dye Formulation - Simplified!</p>
+          <p class="signin-text">Sign in to your account</p>
         </div>
         <form (ngSubmit)="onLogin()" class="auth-form">
           <div class="form-group">
@@ -49,9 +50,10 @@ import { AuthService } from '../../core/auth.service';
       box-shadow: 0 4px 24px rgba(0,0,0,0.08); width: 100%; max-width: 400px;
     }
     .auth-header { text-align: center; margin-bottom: 32px; }
-    .auth-logo { font-size: 48px; display: block; margin-bottom: 12px; }
-    .auth-header h1 { margin: 0; font-size: 28px; color: #1a202c; }
-    .auth-header p { color: #64748b; margin-top: 8px; }
+    .logo-img { height: 72px; width: auto; object-fit: contain; display: block; margin: 0 auto 16px auto; }
+    .auth-header h1 { margin: 0; font-size: 32px; color: #1a202c; font-weight: 800; letter-spacing: -0.5px; }
+    .tagline { color: #4f46e5; font-size: 15px; font-weight: 600; margin: 8px 0 16px 0; }
+    .signin-text { color: #64748b; font-size: 14px; margin: 0; }
     .form-group { margin-bottom: 16px; }
     .form-group label { display: block; margin-bottom: 6px; font-weight: 500; color: #374151; font-size: 14px; }
     .form-group input {
